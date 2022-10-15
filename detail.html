@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/iconfont.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html{
+            font-size: calc(100vw / 7.5);
+            background-color: #ccc;
+        }
+        body{
+            font-size: 14px;
+        }
+        a:focus,a:active{
+            -webkit-tap-highlight-color: rgba(0,0,0,0)
+}
+        @media screen and (min-width:750px) {
+            html{
+                font-size: 100px;
+            }
+        }
+        /* 美化滚动条 */
+        ::-webkit-scrollbar{
+            width: 6px;
+            height: 6px;
+        }
+        ::-webkit-scrollbar-thumb{
+            background-color: rgba(0,0,0,.3);
+            border-radius: 10px;
+        }
+        .container{
+            max-width: 750px;
+            display: flex;
+            height: 100vh;
+            background-color: white;
+            margin-left: auto;
+            margin-right: auto;
+            flex-direction: column;
+        }
+        .main{
+            flex-grow: 1;
+            overflow-x: hidden;
+        }
+        .header ,.footer{
+            height:0.9rem;
+            background-color: white;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+        }
+        .header a{
+            font-size: 0.3rem;
+            text-decoration: none;
+            color: initial;
+            margin-left: 0.3rem;
+        }
+        .swiper{
+            margin-left: 0.3rem;
+            width: 6.85rem;
+            overflow: hidden;
+        }
+        .main .swiperx{
+            white-space: nowrap;
+        }
+        .main .swiperx img{
+            max-width: 6.85rem;
+        }
+        .main h2{
+            font-size: 0.28rem;
+            margin-top: 0.1rem;
+        }
+        .main .box{
+            width:6.85rem;
+            margin-left: 0.3rem;
+        }
+        .main .box .text{
+            display: -webkit-box;
+            -webkit-line-clamp:3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            font-size: 0.26rem;
+            text-overflow: ellipsis;
+        }
+        .main .box p{
+            color: red;
+            font-size: 0.38rem;
+        }
+        .main .box button{
+            display: inline-block;
+            width:0.55rem;
+            height: 0.5rem;
+            border: none;
+            margin-right: 0.1rem;
+            font-size: 0.3rem;
+        }
+        .main .box #btn1{
+            border-top-left-radius:0.1rem ;
+            border-bottom-left-radius:0.1rem ;
+        }
+        .main .box #btn3{
+            border-top-right-radius:0.1rem ;
+            border-bottom-right-radius:0.1rem ;
+        }
+        .main .box .main-footer{
+            height: 1.05rem;
+            border-bottom: 1px solid #ccc;
+            border-top: 1px solid #ccc;
+            margin-top: 0.3rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.25rem;
+        }
+        .main .box .main-footer i{
+            font-size: 0.25rem;
+            margin-right: 0.1rem;
+        }
+        .main .tab{
+            width: 6.85rem;
+            margin-left: 0.3rem;
+            height: 0.8rem;
+        }
+        ul{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            list-style: none;
+            border-bottom: 1px solid #ccc;
+            height: 0.8rem;
+            flex-wrap: 1;
+        }
+        li{     height: 0.8rem;
+            padding-top: 0.25rem;
+                cursor: pointer;
+                font-size: 0.2rem;
+        }
+        li:focus,li:active{
+            -webkit-tap-highlight-color: rgba(0,0,0,0);
+        }
+        .tab .tab1 .li1{
+            border-bottom: 0.05rem solid red;
+        }
+        .dis{
+            display: block;
+            width:6.85rem;
+        }
+        .hide{
+            display: none;
+        }
+        .dis img{
+            width: 6.85rem;
+            margin-left: 0.3rem;
+        }
+        .footer{
+            height: 1.15rem;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center
+        }
+        .footer a{
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            font-size: 0.18rem;
+            color: inherit;
+        }
+        .footer i{
+            font-size: 0.38rem;
+            margin-bottom: 0.05rem;
+        }
+        .footer button{
+            width: 6.1rem;
+            border-radius: 0.8rem;
+            height:0.8rem ;
+            font-size: 0.28rem;
+            color: white;
+            border: none;
+            background-color: #F90E49;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="./index.html"> &lt;&nbsp;&nbsp;&nbsp;商品详情</a>
+        </div>
+        <div class="main">
+            <div class="swiper">
+                <div class="swiperx">
+                    <img src="./images/flxq/lunbo.png" alt=""><img src="./images/flxq/lunbo.png" alt="">
+                </div>
+            </div>
+            <div class="box">
+                <h2>X9Plus全网通</h2><br><br>
+                <span class="text">【花呗免息，0首付O利率轻松购机】X9s Plus A 5.85英寸
+                    大屏，双引擎闪充，4015mAh大电池，持久续航(注:面部
+                    识别需升级到最新系统使用)
+                </span><br>
+                <p>￥2798</p><br>
+                <span style="font-size:0.2rem ;">购买数量:</span>
+                
+                <button id="btn1">-</button><button id="btn2">1</button><button id="btn3">+</button>
+                <div class="main-footer">
+                    <div class="main-footer-left">
+                        <i class="iconfont icon-kongxinduigou"></i><span>支持花呗分期</span>
+                        <i class="iconfont icon-kongxinduigou"></i><span>支持以旧换新</span>
+                    </div>
+                    <span>></span>
+                </div>
+            </div>
+            <div class="tab">
+                <div class="tab1">
+                    <ul id="ul1">
+                        <li class="li1" onclick="change(this)" cont="box1">图文详情</li>
+                        <li onclick="change(this)" cont="box2">商品参数</li>
+                    </ul>
+                </div>
+            </div>
+                <p id="box1" class="dis">
+                <img src="./images/flxq/top1.png" alt="">
+                    <img src="./images/flxq/long.png" alt="">
+                </p>
+                <p id="box2" class="hide">暂无数据</p>
+                <div style="height: 0.2rem; background-color:#eee"></div>
+        </div>
+        
+        <div class="footer">
+            <a href="./index.html">
+                <i class="iconfont icon-shouye-shouye"></i>
+                <span>首页</span>
+            </a>
+            <button onclick="location.href='./submit.html'">立即购买</button>
+        </div>
+    </div>
+
+
+
+    <script>
+         auto();
+        function auto(){
+            int=setInterval(function(){
+              var swiper=document.querySelector('.swiperx')
+                var prevE1=swiper.firstElementChild;
+                swiper.style.transition='transform .5s'
+                swiper.style.transform='translateX(-6.85rem)';
+            setTimeout(function(){
+              swiper.append(prevE1);
+                swiper.style.transition='none';
+                swiper.style.transform='translateX(0)'
+            },500)
+            },2000)
+        }
+
+        btn2.innerText==1? btn1.disabled=true:'';
+        btn1.onclick=function(){
+            if(btn2.innerText<=2){
+                btn1.disabled=true
+            }btn2.innerText-=1
+        }
+        btn3.onclick=function(){
+            btn1.disabled=false
+            btn2.innerText++
+        }
+        
+        setInterval(function(){
+            var inner=btn2.innerText
+            localStorage.setItem('inner',JSON.stringify(inner))
+        })
+        var innerNew=JSON.parse(localStorage.getItem('inner'));
+        console.log(Number(innerNew));
+        btn2.innerText=Number(innerNew)
+        
+        function change(obj){
+                var list=document.getElementById('ul1').childNodes;
+                for(var i=0;i<list.length;i++){
+                    if(list[i].className=='li1'){
+                        list[i].className='';
+                        var cont=list[i].getAttribute('cont');
+                        console.log(cont);
+                        document.getElementById(cont).className='hide'
+                    }
+                }
+                obj.className='li1';
+                var cont_li=obj.getAttribute('cont');
+                document.getElementById(cont_li).className='dis'
+            }
+    </script>
+</body>
+</html>

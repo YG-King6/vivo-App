@@ -1,0 +1,201 @@
+/* reset css */
+::-webkit-scrollbar{
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-thumb{
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, .3);
+  }
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  a{
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+  }
+  a:focus,a:active{
+    -webkit-tap-highlight-color: rgba(0,0,0,0)
+}
+  html{
+    font-size: calc( 100vw / 7.5 );
+    background-color: #DCDCDC;
+  }
+  
+  @media screen and ( min-width: 750px ) {
+    html{
+      font-size: 100px;
+    } 
+  }
+  body{
+    font-size: 14px;
+    box-sizing: border-box;
+  }
+  
+  /* layout css */
+  .container{
+    display: flex;
+    flex-direction: column;
+    max-width: 750px;
+    /*也可以这样 width: 75rem; */
+    height: 100vh;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .header{
+    height: .9rem;
+    line-height: .9rem;
+    padding-left: .3rem;
+    padding-right: .3rem;
+    flex-shrink: 0;
+  }
+  .header h1{
+    font-size: .3rem;
+  }
+  .main{
+    flex-grow: 1;
+    overflow-x: hidden;
+    background-color: #eee;
+  }
+  
+  .tabnav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 1rem;
+    flex-shrink: 0;
+  }
+  
+  .tabnav a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: center;
+    height: 100%;
+  }
+  .tabnav a.active i{
+    color: #E71828;
+  }
+  .tabnav a.active span{
+    color: #2C2C2C;
+  }
+  
+  .tabnav a i{
+    font-style: normal;
+    font-size: .36rem;
+    color: #555;
+  }
+  .tabnav a span{
+    font-size: .18rem;
+    color: #aaa;
+  }
+
+  .nav{
+    display: flex;
+    width: 100%;
+    height:100%;
+    flex-wrap: nowrap;
+}
+.nav .left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:1.65rem;
+    border-right: 1px solid #ccc;
+    height: 100%;
+    flex-shrink: 1;
+    background-color: white;
+    font-size: 0.25rem;
+}
+.nav .left1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    overflow: auto;
+    width: 100%;
+}
+.nav .left span{
+    font-weight: 500;
+    width:100%;
+    text-align: center;
+    margin-top: 0.3rem;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    padding: 0.03rem 0;
+}
+.nav .left span:active{
+  -webkit-tap-highlight-color: rgba(0,0,0,0)
+}
+.left1 span.active{
+    border-left: 0.04rem solid red ;
+    color: red;
+}
+.nav .right{
+    flex-grow: 1;
+    height: 100%;
+    overflow: auto;
+    background-color: white;
+}
+.nav .right .right-top{
+    width:100%;
+    text-align: center;
+    margin-top: 0.1rem;
+}
+.nav .right .right-top img{
+    max-width: 5.32rem;
+}
+
+.right h5{
+    font-size: 0.22rem;
+    text-align: center;
+    margin-bottom: 0.45rem;
+    margin-top: 0.35rem;
+    height: 0.4rem;
+    line-height: 0.4rem;
+}
+.right h5 b{
+    color: #ccc;
+}
+.IQOO{
+    margin-bottom: 0.3rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.IQOO a{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 2.5rem;
+}
+.IQOO a img{
+    width: 1.25rem;
+    height: auto;
+}
+.IQOO a span{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 2.3rem;
+}
+.IQOO a span:nth-child(2),.IQOO a span:nth-child(4){
+    font-size: 0.2rem;
+    font-weight: 550;
+    margin-top:0.55rem;
+}
+.IQOO a span:nth-child(3){
+    margin-top: 0.05rem;
+    color: #959595;
+    font-size: 0.18rem;
+}
+.IQOO a span:nth-child(4){
+    margin-top: 0.2rem;
+}

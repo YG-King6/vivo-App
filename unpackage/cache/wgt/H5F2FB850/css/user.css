@@ -1,0 +1,210 @@
+/* reset css */
+::-webkit-scrollbar{
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-thumb{
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, .3);
+  }
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  a{
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+  }
+  a:focus,a:active{
+    -webkit-tap-highlight-color: white;
+}
+  html{
+    font-size: calc( 100vw / 7.5 );
+    background-color: #DCDCDC;
+  }
+  
+  @media screen and ( min-width: 750px ) {
+    html{
+      font-size: 100px;
+    } 
+  }
+  body{
+    font-size: 14px;
+  }
+  
+  /* layout css */
+  .container{
+    display: flex;
+    flex-direction: column;
+    max-width: 750px;
+    /*也可以这样 width: 75rem; */
+    height: 100vh;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .header{
+    height: .9rem;
+    line-height: .9rem;
+    padding-left: .3rem;
+    padding-right: .3rem;
+    flex-shrink: 0;
+  }
+  .header h1{
+    font-size: .3rem;
+  }
+  .main{
+    flex-grow: 1;
+    overflow-x: hidden;
+    background-color: #eee;
+  }
+  
+  .tabnav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 1rem;
+    flex-shrink: 0;
+  }
+  
+  .tabnav a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: center;
+    height: 100%;
+  }
+  .tabnav a.active i{
+    color: #E71828;
+  }
+  .tabnav a.active span{
+    color: #2C2C2C;
+  }
+  
+  .tabnav a i{
+    font-style: normal;
+    font-size: .36rem;
+    color: #555;
+  }
+  .tabnav a span{
+    font-size: .18rem;
+    color: #aaa;
+  }
+
+  .user-top{
+    background-image: linear-gradient(to top, white , #FFEFEF);
+    height: 4.6rem;
+}
+.user-user{
+    display: flex;
+    justify-content: space-between;
+}
+.user-left{
+    display: flex;
+    align-items: center;
+    margin-left: 0.3rem;
+    margin-top: 0.6rem;
+}
+.user-left img{
+    max-width: 1.28rem;
+    margin-right: 0.3rem;
+}
+.user-left span{
+    font-size: 0.4rem;
+}
+.user-left b{
+    color: #A9A9A9;
+    font-size: 0.2rem;
+    font-weight: normal;
+}
+.user-left .name{
+    display: flex;
+    height: 0.9rem;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.user-right {
+    width:2rem ;
+    font-size: 0.23rem;
+    color: #a9a9a9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.user-right a{
+    margin-top: 0.3rem;
+    margin-left: 0.15rem;
+}
+.user-dd{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 0.3rem;
+    margin-top: 0.5rem;
+    align-items: center;
+}
+.user-dd .mydd{
+    font-size: 0.32rem;
+}
+.user-dd a{
+    font-size: 0.23rem;
+    color: #ccc;
+    margin-right: 0.35rem;
+}
+.user-top .fk{
+    display: flex;
+    height: 1.8rem;
+    justify-content: space-around;
+    align-items: center;
+}
+.user-top .fk a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+}
+.user-top .fk i{
+    color: red;
+    font-size: 0.45rem;
+}
+.user-top .fk span{
+    margin-top: 0.2rem;
+    font-size: 0.2rem;
+}
+.user-footer{
+    margin-top: 0.2rem;
+    height: 5.05rem;
+    background-color: white;
+}
+.user-footer .youhui{
+    height: 1.25rem;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.user-footer .last{
+    border: none;
+}
+.user-footer .youhui div{
+    display: flex;
+    align-items: center;
+
+}
+.user-footer .youhui i{
+    font-size: 0.3rem;
+    margin-left: 0.5rem;
+}
+.user-footer .youhui span{
+    font-size: 0.25rem;
+    margin-left: 0.3rem;
+}
+.user-footer .youhui a{
+    font-size: 0.3rem;
+    color: #ccc;
+    margin-right: 0.3rem;
+}
